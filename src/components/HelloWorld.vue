@@ -72,13 +72,13 @@ const getData = async () => {
     <div class="form">
       <h1 class="green">{{ msg }}</h1>
       <label for="name">Name</label>
-      <input type="text" name="name" id="name" /><br />
+      <input type="text" name="name" id="name" class="text-box" /><br />
 
       <label for="age">Age</label>
-      <input type="number" name="age" id="age"><br>
+      <input type="number" name="age" id="age" class="text-box" /><br>
 
       <label for="phone">Phone No</label>
-      <input type="tel" name="phone" id="phone"><br>
+      <input type="tel" name="phone" id="phone" class="text-box" /><br>
 
       <button @click="sendData">submit</button>
       <br>
@@ -91,6 +91,10 @@ const getData = async () => {
 </template>
 
 <style scoped>
+
+.text-box{
+  height: 25px;
+}
 .green {
   color: rgb(255, 255, 255);
 }
